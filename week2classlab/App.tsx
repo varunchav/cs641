@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View , ActivityIndicator, Image} from 'react-native';
+import { StyleSheet, Text, ScrollView , ActivityIndicator, Image} from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView>
       <Text>Open up App.tsx to start working on your app!</Text>
       <Text>Text 1</Text>
       <Text>Text 2</Text>
@@ -13,7 +13,7 @@ export default function App() {
         style={styles.tinyLogo} >
         </Image>
       <StatusBar style="auto" />
-    </View>
+    </ScrollView>
   );
 }
 
